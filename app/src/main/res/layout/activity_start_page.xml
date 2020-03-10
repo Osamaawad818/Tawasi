@@ -33,4 +33,11 @@
         android:textStyle="bold"
         android:layout_marginRight="@dimen/_25sdp"
         android:layout_marginBottom="@dimen/_15sdp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAHAHAHAHAHAHA"
+        android:layout_gravity="center"/>
 </FrameLayout>
