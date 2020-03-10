@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Sign_in">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_97sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/_18sdp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorButtonNormal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Already have an account?"
+        android:textColor="#000000"
+        android:textSize="@dimen/_13sdp" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="@dimen/_275sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="@dimen/_275sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            >
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/_275sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="?attr/actionModeSplitBackground"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="@dimen/_137sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_5sdp"
+
+                android:text="Forget password?"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="@dimen/_138sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_52sdp"
+                android:text="Create account"
+                android:onClick="create"
+                android:textColor="?attr/actionModeSplitBackground"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_height="1dp"
+            android:background="?attr/colorButtonNormal" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

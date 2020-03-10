@@ -1,49 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".StartPage">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_sign_in"
         android:layout_width="@dimen/_250sdp"
-        android:layout_height="wrap_content"
-        android:text="SignIn"
-        android:textStyle="bold"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="@dimen/_120sdp"/>
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:onClick="signIn"
+        android:layout_marginTop="@dimen/_350sdp"
+        android:text="@string/Sign_in"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12sdp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_sign_up"
         android:layout_width="@dimen/_250sdp"
-        android:layout_height="wrap_content"
-        android:text="SignUp"
-        android:textStyle="bold"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="@dimen/_80sdp"/>
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:onClick="signUp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/Sign_up"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12sdp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skip >>"
-        android:textSize="@dimen/_15sdp"
-        android:layout_gravity="bottom|right"
-        android:textStyle="bold"
-        android:layout_marginRight="@dimen/_25sdp"
-        android:layout_marginBottom="@dimen/_15sdp" />
+        android:id="@+id/txt_skip"
+        android:layout_width="@dimen/_52sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginLeft="@dimen/_240sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/skip"
+        android:onClick="Skip"
+        android:textColor="#000000"
+        android:textSize="@dimen/_13sdp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HAHAHAHAHAHAHA"
-        android:layout_gravity="center"/>
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-</FrameLayout>
+</LinearLayout>
