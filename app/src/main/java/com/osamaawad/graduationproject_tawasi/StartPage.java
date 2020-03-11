@@ -16,18 +16,18 @@ public class StartPage extends AppCompatActivity {
     }
 
     public void signIn(View view) {
-        Intent i = new Intent(StartPage.this,Sign_in.class);
+        Intent i = new Intent(StartPage.this , Sign_in.class);
         startActivity(i);
     }
 
 
     public void signUp(View view) {
-        Intent i = new Intent(StartPage.this,Sign_up.class);
+        Intent i = new Intent(StartPage.this , Sign_up.class);
         startActivity(i);
     }
 
     public void Skip(View view) {
-        Intent i = new Intent(StartPage.this,Sign_in.class);
+        Intent i = new Intent(StartPage.this , MainPage.class);
         startActivity(i);
     }
 }
