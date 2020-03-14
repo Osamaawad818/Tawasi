@@ -19,24 +19,24 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="E-Mail"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginLeft="@dimen/_20sdp"/>
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Password"
         android:layout_gravity="center"
         android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"/>
+        android:layout_marginRight="@dimen/_20sdp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/textView6"
