@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/All_Restaurant_Layout"
+    android:background="#fff">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/AR_LOGO"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_75sdp"/>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/txt_RestName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+
+        <TextView
+            android:id="@+id/txt_RestRate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#000"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_25sdp"/>
+    </FrameLayout>
+</FrameLayout>

@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical"
+    android:background="#fff"
     tools:context=".Sign_in">
 
-    <ImageView
-        android:id="@+id/logo"
+    <androidx.cardview.widget.CardView
         android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
         android:layout_gravity="center|top"
-        app:srcCompat="@drawable/large" />
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_45sdp">
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/large"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
 
     <EditText
         android:id="@+id/editText"
@@ -25,30 +31,23 @@
         android:layout_marginBottom="@dimen/_50sdp"
         android:ems="10"
         android:hint="@string/Email"
-        android:inputType="textPersonName" />
+        android:padding="@dimen/_10sdp"
+        android:inputType="textPersonName"
+        android:background="@drawable/ed_design"/>
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPassword" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Forget password?"
-        android:textColor="?attr/actionModeSplitBackground"
-        android:textSize="@dimen/_12sdp"
-        android:layout_gravity="center|right"
-        android:layout_marginTop="@dimen/_50sdp"
-        android:layout_marginRight="@dimen/_20sdp"/>
+        android:padding="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:background="@drawable/ed_design"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -57,11 +56,24 @@
         android:layout_weight="1"
         android:text="Don't have an Account ?"
         android:onClick="create"
-        android:textColor="?attr/actionModeSplitBackground"
-        android:textSize="@dimen/_12sdp"
-        android:layout_gravity="center|left"
-        android:layout_marginTop="@dimen/_50sdp"
-        android:layout_marginLeft="@dimen/_20sdp"/>
+        android:textColor="#000"
+        android:textSize="@dimen/_14sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginRight="@dimen/_60sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Create Now"
+        android:onClick="create"
+        android:textColor="#0262A9"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginLeft="@dimen/_57sdp"/>
 
     <Button
         android:id="@+id/btn_login"
@@ -70,7 +82,10 @@
         android:background="@drawable/btn_login_design"
         android:text="@string/login"
         android:textColor="#ffffff"
-        android:textSize="@dimen/_12sdp"
-        android:layout_gravity="bottom"/>
-
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"/>
 </FrameLayout>
