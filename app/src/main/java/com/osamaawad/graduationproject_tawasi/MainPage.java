@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.Button;
+import android.widget.FrameLayout;
 
 import com.osamaawad.graduationproject_tawasi.ViewPagerClass.SlideAdapter;
 
@@ -17,6 +18,8 @@ public class MainPage extends AppCompatActivity {
     private int layouts[] = {R.layout.fragment_offers1 , R.layout.fragment_offer2 , R.layout.fragment_offers3};
 
     Button Start_Deliver;
+
+    //FrameLayout food2 , search2 , profile2 , type2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,6 @@ public class MainPage extends AppCompatActivity {
 
 
     public void StartDeliver(View view) {
-        startActivity(new Intent(MainPage.this , RestaurantPage.class));
+        startActivity(new Intent(MainPage.this , TypeOfFoodPage.class));
     }
 }

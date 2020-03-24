@@ -21,4 +21,9 @@
         <item name="android:background">@color/colorAccent</item>
     </style>
 
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">#f5bd1f</item>
+    </style>
+
 </resources>

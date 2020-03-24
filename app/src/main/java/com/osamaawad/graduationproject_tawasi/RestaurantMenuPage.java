@@ -42,13 +42,6 @@ public class RestaurantMenuPage extends AppCompatActivity {
             }
         });
 
-        Price.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(RestaurantMenuPage.this , MealReservationPage.class));
-            }
-        });
-
         RecyclerRestaurantMenu();
     }
 

@@ -28,21 +28,11 @@ public class RestaurantPage extends AppCompatActivity {
     ArrayList<AllRestaurant> allRestaurants;
     ARAdapter arAdapter;
 
-    TextView CustomerName;
-
-    FrameLayout food , search , profile;
+    FrameLayout food , search , profile , type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_page);
-
-        CustomerName = findViewById(R.id.txt_CustomerName);
-        CustomerName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(RestaurantPage.this , RestaurantMenuPage.class));
-            }
-        });
 
         food = findViewById(R.id.F_Food);
         food.setOnClickListener(new View.OnClickListener() {
@@ -52,19 +42,19 @@ public class RestaurantPage extends AppCompatActivity {
             }
         });
 
-        search = findViewById(R.id.F_Search);
-        search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //startActivity(new Intent(RestaurantPage.this , ProfilePage.class));
-            }
-        });
-
         profile = findViewById(R.id.F_Profile);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RestaurantPage.this , ProfilePage.class));
+            }
+        });
+
+        type = findViewById(R.id.F_Type);
+        type.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RestaurantPage.this , TypeOfFoodPage.class));
             }
         });
 
@@ -121,7 +111,6 @@ public class RestaurantPage extends AppCompatActivity {
         arAdapter = new ARAdapter(RestaurantPage.this ,allRestaurants );
         rcAllRestauarnt.setAdapter(arAdapter);
     }
-
 
 }
 

@@ -5,52 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RestaurantMenuPage">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_115sdp"
-        android:src="@drawable/room1"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restaurant Name"
-        android:textColor="#000"
-        android:textSize="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_125sdp"
-        android:layout_marginLeft="@dimen/_20sdp"/>
-
-    <EditText
-        android:id="@+id/Search_View"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_155sdp"
-        android:background="@drawable/search_view_design"
-        android:hint="Search for meals"
-        android:paddingLeft="@dimen/_20sdp"
-        android:paddingRight="@dimen/_20sdp"/>
+    tools:context=".RestaurantMenuPage"
+    android:background="#fff">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_200sdp"
-        android:layout_marginBottom="@dimen/_50sdp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/room1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Name"
+                android:textColor="#000"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"/>
+
+            <EditText
+                android:id="@+id/Search_View"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/search_view_design"
+                android:hint="Search for meals"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/RV_RestaurantMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_5sdp"/>
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_40sdp"/>
         </LinearLayout>
     </ScrollView>
 
@@ -58,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_gravity="bottom"
-        android:background="#15F81E">
+        android:background="#f5bd1f">
 
         <TextView
             android:id="@+id/txt_See_Cart"

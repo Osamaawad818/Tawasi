@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign In to account or create a new account"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_18sdp"
             android:textColor="#000"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/_5sdp"
@@ -34,12 +34,13 @@
             android:text="Sign In or create account"
             android:textSize="@dimen/_16sdp"
             android:textColor="#ffffff"
+            android:textStyle="bold"
             android:background="@drawable/btn_login_design"
             android:onClick="LoginOrCreateAccount"
-            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_55sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_5sdp"/>
+            android:layout_marginBottom="@dimen/_10sdp"/>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="@dimen/_5sdp"
         app:cardElevation="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_125sdp"
+        android:layout_marginTop="@dimen/_140sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp">
 
@@ -58,8 +59,8 @@
             android:layout_marginLeft="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginBottom="@dimen/_5sdp"
-            android:text="Country"
-            android:textSize="@dimen/_14sdp"
+            android:text="City"
+            android:textSize="@dimen/_16sdp"
             android:textColor="#000000"
             android:textStyle="bold"/>
 
@@ -68,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
             android:textColor="#000000"
             android:layout_marginLeft="@dimen/_25sdp"
             android:layout_marginTop="@dimen/_30sdp"
@@ -80,16 +81,16 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="@dimen/_5sdp"
         app:cardElevation="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_210sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp">
 
         <TextView
-            android:id="@+id/txt_Rate"
+            android:id="@+id/txt_CallUs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Call Us"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_16sdp"
             android:textColor="#000000"
             android:textStyle="bold"
             android:layout_marginLeft="@dimen/_15sdp"
@@ -103,11 +104,11 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/txt_Contact"
+            android:id="@+id/txt_AboutUs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About Us"
-            android:textSize="20dp"
+            android:textSize="@dimen/_16sdp"
             android:textColor="#000000"
             android:textStyle="bold"
             android:layout_marginLeft="@dimen/_15sdp"
@@ -127,7 +128,7 @@
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_gravity="left|center"
-            android:layout_marginLeft="@dimen/_10sdp">
+            android:layout_marginLeft="@dimen/_20sdp">
             <ImageView
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
@@ -147,8 +148,7 @@
             android:id="@+id/F_Type"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="left|center"
-            android:layout_marginLeft="@dimen/_95sdp">
+            android:layout_gravity="center">
 
             <ImageView
                 android:layout_width="@dimen/_20sdp"
@@ -166,32 +166,11 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/F_Search"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_gravity="right"
-            android:layout_marginRight="@dimen/_95sdp">
-            <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@drawable/ic_action_search"
-                android:layout_gravity="center|top"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Search"
-                android:textSize="@dimen/_12sdp"
-                android:textStyle="bold"
-                android:layout_gravity="center|bottom"/>
-        </FrameLayout>
-
-        <FrameLayout
             android:id="@+id/F_Profile"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_gravity="right|center"
-            android:layout_marginRight="@dimen/_10sdp">
+            android:layout_marginRight="@dimen/_20sdp">
             <ImageView
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
